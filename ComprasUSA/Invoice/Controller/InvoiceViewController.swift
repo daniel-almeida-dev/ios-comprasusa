@@ -51,7 +51,7 @@ class InvoiceViewController: UIViewController {
             
             loadValues()
         } catch {
-            print(error)
+            showAlert("Ocorreu um erro ao tentar carregar os produtos")
         }
     }
     

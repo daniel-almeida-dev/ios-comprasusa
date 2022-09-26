@@ -50,7 +50,7 @@ class PurchasesViewController: UITableViewController {
         do {
             try fetchedResultsController.performFetch()
         } catch {
-            print(error)
+            showAlert("Ocorreu um erro ao tentar carregar os produtos")
         }
     }
     

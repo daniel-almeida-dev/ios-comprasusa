@@ -77,7 +77,7 @@ class SettingsViewController : UIViewController {
             
             tableStates.reloadData()
         } catch {
-            print(error)
+            showAlert("Ocorreu um erro ao tentar carregar os estados")
         }
     }
     
@@ -153,14 +153,6 @@ class SettingsViewController : UIViewController {
         } catch {
             return nil
         }
-    }
-    
-    func showAlert(_ message: String){
-        let alert = UIAlertController(title: "Atenção", message: message, preferredStyle:.alert)
-        
-        alert.addAction(UIAlertAction(title: "Entendi", style: .default, handler: nil))
-        
-        present(alert, animated: true, completion: nil)
     }
     
     // MARK: - Actions

@@ -19,6 +19,7 @@
 		FA13201928E0CCEE00FD8F85 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA13201828E0CCEE00FD8F85 /* Settings.storyboard */; };
 		FA13201B28E0CE3600FD8F85 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA13201A28E0CE3600FD8F85 /* Product.storyboard */; };
 		FA13201D28E0FD3600FD8F85 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA13201C28E0FD3600FD8F85 /* Settings.bundle */; };
+		FA13202128E1640800FD8F85 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13202028E1640800FD8F85 /* UIViewController+Alert.swift */; };
 		FA2848B728DDB2EF00C63962 /* UIViewController+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2848B628DDB2EF00C63962 /* UIViewController+Context.swift */; };
 		FA72478028D8EC6000B9DEB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72477F28D8EC6000B9DEB1 /* AppDelegate.swift */; };
 		FA72478228D8EC6000B9DEB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72478128D8EC6000B9DEB1 /* SceneDelegate.swift */; };
@@ -63,6 +64,7 @@
 		FA13201828E0CCEE00FD8F85 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		FA13201A28E0CE3600FD8F85 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
 		FA13201C28E0FD3600FD8F85 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		FA13202028E1640800FD8F85 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		FA2848B628DDB2EF00C63962 /* UIViewController+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Context.swift"; sourceTree = "<group>"; };
 		FA72477C28D8EC6000B9DEB1 /* ComprasUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComprasUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA72477F28D8EC6000B9DEB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			children = (
 				FA13200728DFAC0800FD8F85 /* Product+Conversions.swift */,
 				FA2848B628DDB2EF00C63962 /* UIViewController+Context.swift */,
+				FA13202028E1640800FD8F85 /* UIViewController+Alert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				FA13200B28DFEC8F00FD8F85 /* PurchasesViewController.swift in Sources */,
 				FA2848B728DDB2EF00C63962 /* UIViewController+Context.swift in Sources */,
 				FA13200828DFAC0800FD8F85 /* Product+Conversions.swift in Sources */,
+				FA13202128E1640800FD8F85 /* UIViewController+Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
