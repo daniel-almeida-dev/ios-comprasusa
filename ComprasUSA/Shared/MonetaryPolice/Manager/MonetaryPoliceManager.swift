@@ -19,15 +19,29 @@ class MonetaryPoliceManager {
     static let IOF_KEY = "iof";
     static let DOLLAR_QUOTE_KEY = "dollarQuote";
     
+    static let DEFAULT_IOF_VALUE = 6.38
+    static let DEFAULT_DOLLAR_QUOTE_VALUE = 3.2
+    
     init() {
-        monetaryPolice = MonetaryPolice(iof: 6.38, dollarQuote: 3.2)
+        if let iof = ud.string(forKey: MonetaryPoliceManager.IOF_KEY),
+           let dollarQuote = ud.string(forKey: MonetaryPoliceManager.DOLLAR_QUOTE_KEY) {
+            if let mIof = Double(iof),
+               let mDollarQuote = Double(dollarQuote) {
+                monetaryPolice = MonetaryPolice(iof: mIof, dollarQuote: mDollarQuote)
+            } else {
+                monetaryPolice = MonetaryPolice(iof: MonetaryPoliceManager.DEFAULT_IOF_VALUE, dollarQuote: MonetaryPoliceManager.DEFAULT_DOLLAR_QUOTE_VALUE)
+            }
+        } else {
+            monetaryPolice = MonetaryPolice(iof: MonetaryPoliceManager.DEFAULT_IOF_VALUE, dollarQuote: MonetaryPoliceManager.DEFAULT_DOLLAR_QUOTE_VALUE)
+        }
         
         configure()
+        loadValues()
     }
     
     // MARK: - Methods
     func configure() {
-        if monetaryPolice.iof == 6.38 && monetaryPolice.dollarQuote == 3.2 {
+        if monetaryPolice.iof == MonetaryPoliceManager.DEFAULT_IOF_VALUE && monetaryPolice.dollarQuote == MonetaryPoliceManager.DEFAULT_DOLLAR_QUOTE_VALUE {
             ud.set(monetaryPolice.iof, forKey: MonetaryPoliceManager.IOF_KEY)
             ud.set(monetaryPolice.dollarQuote, forKey: MonetaryPoliceManager.DOLLAR_QUOTE_KEY)
         }

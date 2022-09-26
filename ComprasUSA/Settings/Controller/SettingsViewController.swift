@@ -100,41 +100,36 @@ class SettingsViewController : UIViewController {
         }
         
         let okAction = UIAlertAction(title: btn, style: .default) { [self] _ in
-            let mState = state ?? State(context: self.context)
-            
             let textFieldName = alert.textFields![0] as UITextField
+            let textFieldTax = alert.textFields![1] as UITextField
             
             if textFieldName.text == nil || textFieldName.text == "" {
                 self.showAlert("Você não informou o nome do estado")
                 
                 return
-            } else {
-                let stateName = textFieldName.text!
-                
-                let existingState = self.getStateByName(stateName)
-                    
-                if (existingState != nil && state == nil) || (existingState != nil && state != nil && stateName != state?.name) {
-                        self.showAlert("Estado já cadastrado")
-                        
-                        return
-                } else {
-                    mState.name = textFieldName.text
-                    
-                    let textFieldTax = alert.textFields![1] as UITextField
-                    
-                    if let tax = Double(textFieldTax.text!) {
-                        mState.tax = tax
-                        
-                        try? self.context.save()
-              
-                        self.loadStates()
-                    } else {
-                        self.showAlert("O valor informado para a taxa de imposto não é válido")
-                    
-                        return
-                    }
-                }
             }
+            
+            guard let tax = Double(textFieldTax.text!) else {
+                self.showAlert("O valor informado para a taxa de imposto não é válido")
+                    
+                return
+            }
+            
+            let stateName = textFieldName.text!
+            let existingState = self.getStateByName(stateName)
+            if (existingState != nil && state == nil) || (existingState != nil && state != nil && stateName != state?.name) {
+                self.showAlert("Estado já cadastrado")
+                        
+                return
+            }
+
+            let state = state ?? State(context: self.context)
+            state.name = textFieldName.text
+            state.tax = tax
+                        
+            try? self.context.save()
+              
+            self.loadStates()
         }
         
         alert.addAction(okAction)

@@ -174,10 +174,6 @@ class ProductViewController : UIViewController {
     
     // MARK: - IBActions
     @IBAction func save(_ sender: Any) {
-        if product == nil {
-            product = Product(context: context)
-        }
-        
         if textFieldProductName.text == nil || textFieldProductName.text == ""  {
             showAlert("Digite o nome do produto")
             
@@ -200,6 +196,10 @@ class ProductViewController : UIViewController {
             showAlert("O valor informado para o produto não é válido")
             
             return
+        }
+        
+        if product == nil {
+            product = Product(context: context)
         }
         
         product?.name = textFieldProductName.text

@@ -109,7 +109,7 @@ class InvoiceViewController: UIViewController {
         return ((valueBRL * iof)/100)
     }
     
-    // MARK: - Actions
+    // MARK: - Methods
     @objc func defaultsChanged() {
         MonetaryPoliceManager.shared.loadValues()
         loadValues()
