@@ -103,6 +103,14 @@ class ProductViewController : UIViewController {
         }
     }
     
+    func showAlert(_ message: String){
+        let alert = UIAlertController(title: "Atenção", message: message, preferredStyle:.alert)
+        
+        alert.addAction(UIAlertAction(title: "Entendi", style: .default, handler: nil))
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
     // MARK: - Set View
     private func setPickerViewStates() {
         pickerViewStates = UIPickerView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 300))
@@ -170,14 +178,35 @@ class ProductViewController : UIViewController {
             product = Product(context: context)
         }
         
+        if textFieldProductName.text == nil || textFieldProductName.text == ""  {
+            showAlert("Digite o nome do produto")
+            
+            return
+        }
+        
+        if initialImage {
+            showAlert("Selecione uma imagem ou tire uma foto do produto")
+            
+            return
+        }
+        
+        guard let state = getStateByName(textFieldPurchaseState.text!) else {
+            showAlert("Selecione o estado onde foi feita a compra do produto")
+            
+            return
+        }
+        
+        guard let value = Double(textFieldProductValue.text!) else {
+            showAlert("O valor informado para o produto não é válido")
+            
+            return
+        }
+        
         product?.name = textFieldProductName.text
         product?.creditCard = switchPurchaseType.isOn
-        product?.value = Double(textFieldProductValue.text!) ?? 0.0
+        product?.value = value
         product?.image = imageViewProductImage.image?.jpegData(compressionQuality: 0.8)
-        
-        if let state = getStateByName(textFieldPurchaseState.text!) {
-            product?.state = state
-        }
+        product?.state = state
         
         do {
             try context.save()

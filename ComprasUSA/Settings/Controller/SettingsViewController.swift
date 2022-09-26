@@ -93,26 +93,77 @@ class SettingsViewController : UIViewController {
         
         alert.addTextField { textField in
             textField.placeholder = "Imposto"
-            textField.text = String(format: "%.1f", state?.tax ?? 0.0)
+            
+            if state != nil {
+                textField.text = String(format: "%.1f", state?.tax ?? 0.0)
+            }
         }
         
-        let okAction = UIAlertAction(title: btn, style: .default) { _ in
-            let state = state ?? State(context: self.context)
+        let okAction = UIAlertAction(title: btn, style: .default) { [self] _ in
+            let mState = state ?? State(context: self.context)
             
             let textFieldName = alert.textFields![0] as UITextField
-            state.name = textFieldName.text
             
-            let textFieldTax = alert.textFields![1] as UITextField
-            state.tax = Double(textFieldTax.text!) ?? 0.0
-            
-            try? self.context.save()
-  
-            self.loadStates()
+            if textFieldName.text == nil || textFieldName.text == "" {
+                self.showAlert("Você não informou o nome do estado")
+                
+                return
+            } else {
+                let stateName = textFieldName.text!
+                
+                let existingState = self.getStateByName(stateName)
+                    
+                if (existingState != nil && state == nil) || (existingState != nil && state != nil && stateName != state?.name) {
+                        self.showAlert("Estado já cadastrado")
+                        
+                        return
+                } else {
+                    mState.name = textFieldName.text
+                    
+                    let textFieldTax = alert.textFields![1] as UITextField
+                    
+                    if let tax = Double(textFieldTax.text!) {
+                        mState.tax = tax
+                        
+                        try? self.context.save()
+              
+                        self.loadStates()
+                    } else {
+                        self.showAlert("O valor informado para a taxa de imposto não é válido")
+                    
+                        return
+                    }
+                }
+            }
         }
+        
         alert.addAction(okAction)
         
         let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+        
         alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func getStateByName(_ stateName: String) -> State? {
+        let fetchRequest: NSFetchRequest<State> = State.fetchRequest()
+        let predicate = NSPredicate(format: "name == %@", stateName)
+        fetchRequest.predicate = predicate
+        
+        do {
+            let state = try context.fetch(fetchRequest).first
+            
+            return state
+        } catch {
+            return nil
+        }
+    }
+    
+    func showAlert(_ message: String){
+        let alert = UIAlertController(title: "Atenção", message: message, preferredStyle:.alert)
+        
+        alert.addAction(UIAlertAction(title: "Entendi", style: .default, handler: nil))
         
         present(alert, animated: true, completion: nil)
     }
