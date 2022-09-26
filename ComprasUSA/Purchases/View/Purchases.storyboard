@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0LM-mF-lJU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lista de Compras-->
+        <scene sceneID="hgG-EO-FKr">
+            <objects>
+                <tableViewController id="4UA-T5-8eb" customClass="PurchasesViewController" customModule="ComprasUSA" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="pzx-SN-1D3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableProductsCell" id="9hX-cD-P7B" customClass="TableProductsViewCell" customModule="ComprasUSA" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="110.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9hX-cD-P7B" id="8Yc-6i-L0b">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="110.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7KX-Y7-e0b">
+                                            <rect key="frame" x="10" y="10" width="110" height="90.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="110" id="1JS-Cy-qcZ"/>
+                                                <constraint firstAttribute="height" constant="90" id="gta-mJ-JF3"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U$ 500,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swp-Hn-RzY">
+                                            <rect key="frame" x="130" y="39.5" width="274" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MacBook Pro 15&quot;" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCN-0Y-b4f">
+                                            <rect key="frame" x="130" y="10" width="274" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="PCN-0Y-b4f" firstAttribute="trailing" secondItem="Swp-Hn-RzY" secondAttribute="trailing" id="3uv-xE-8dh"/>
+                                        <constraint firstItem="7KX-Y7-e0b" firstAttribute="leading" secondItem="8Yc-6i-L0b" secondAttribute="leading" constant="10" id="7md-Hw-FiQ"/>
+                                        <constraint firstItem="PCN-0Y-b4f" firstAttribute="top" secondItem="8Yc-6i-L0b" secondAttribute="top" constant="10" id="8Ia-7b-SC1"/>
+                                        <constraint firstItem="7KX-Y7-e0b" firstAttribute="top" secondItem="8Yc-6i-L0b" secondAttribute="top" constant="10" id="9GL-R0-eVI"/>
+                                        <constraint firstItem="Swp-Hn-RzY" firstAttribute="leading" secondItem="PCN-0Y-b4f" secondAttribute="leading" id="9R5-w5-f27"/>
+                                        <constraint firstAttribute="trailing" secondItem="PCN-0Y-b4f" secondAttribute="trailing" constant="10" id="CQy-co-rwY"/>
+                                        <constraint firstItem="Swp-Hn-RzY" firstAttribute="top" secondItem="PCN-0Y-b4f" secondAttribute="bottom" constant="10" id="Eqx-wF-Wps"/>
+                                        <constraint firstAttribute="bottom" secondItem="7KX-Y7-e0b" secondAttribute="bottom" constant="10" id="XYG-6j-p9f"/>
+                                        <constraint firstItem="PCN-0Y-b4f" firstAttribute="leading" secondItem="7KX-Y7-e0b" secondAttribute="trailing" constant="10" id="lxQ-6P-Vap"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageViewProductImage" destination="7KX-Y7-e0b" id="rFz-vd-jSr"/>
+                                    <outlet property="labelProductName" destination="PCN-0Y-b4f" id="RHa-7o-VXz"/>
+                                    <outlet property="labelProductValue" destination="Swp-Hn-RzY" id="Fs4-38-3cD"/>
+                                    <segue destination="zg5-id-0s1" kind="show" id="xMp-Zm-FNm"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4UA-T5-8eb" id="Xp0-Be-8N2"/>
+                            <outlet property="delegate" destination="4UA-T5-8eb" id="nML-uP-sEP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lista de Compras" id="ajM-5X-CIy">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ge4-un-T0o"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Uo7-ie-owg">
+                            <connections>
+                                <segue destination="zg5-id-0s1" kind="show" id="lxq-6x-Man"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0o-WV-wFO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="98"/>
+        </scene>
+        <!--Product-->
+        <scene sceneID="Tax-te-FWs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Product" id="zg5-id-0s1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eXe-Cf-SIP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jE4-Gm-76P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2239" y="98"/>
+        </scene>
+        <!--Compras-->
+        <scene sceneID="0lI-Dh-PTv">
+            <objects>
+                <navigationController id="0LM-mF-lJU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Compras" image="bag.badge.plus" catalog="system" id="8K7-Hp-VJq"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bo8-0n-5ep">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4UA-T5-8eb" kind="relationship" relationship="rootViewController" id="CX0-8z-hUs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6r-wm-JJH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="98"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xMp-Zm-FNm"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="bag.badge.plus" catalog="system" width="124" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

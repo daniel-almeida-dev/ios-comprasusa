@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA131FFC28DED05E00FD8F85 /* MonetaryPoliceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA131FFB28DED05E00FD8F85 /* MonetaryPoliceManager.swift */; };
+		FA131FFF28DED27100FD8F85 /* MonetaryPolice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA131FFE28DED27100FD8F85 /* MonetaryPolice.swift */; };
+		FA13200628DF9CAF00FD8F85 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13200528DF9CAF00FD8F85 /* ProductViewController.swift */; };
+		FA13200828DFAC0800FD8F85 /* Product+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13200728DFAC0800FD8F85 /* Product+Conversions.swift */; };
+		FA13200B28DFEC8F00FD8F85 /* PurchasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13200A28DFEC8F00FD8F85 /* PurchasesViewController.swift */; };
+		FA13200D28DFF06200FD8F85 /* TableProductsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13200C28DFF06200FD8F85 /* TableProductsViewCell.swift */; };
+		FA13201328E056DF00FD8F85 /* InvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13201228E056DF00FD8F85 /* InvoiceViewController.swift */; };
+		FA13201528E0B43A00FD8F85 /* InvoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13201428E0B43A00FD8F85 /* InvoiceViewModel.swift */; };
+		FA13201728E0CAD400FD8F85 /* Invoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA13201628E0CAD400FD8F85 /* Invoice.storyboard */; };
+		FA13201928E0CCEE00FD8F85 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA13201828E0CCEE00FD8F85 /* Settings.storyboard */; };
+		FA13201B28E0CE3600FD8F85 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA13201A28E0CE3600FD8F85 /* Product.storyboard */; };
+		FA13201D28E0FD3600FD8F85 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA13201C28E0FD3600FD8F85 /* Settings.bundle */; };
+		FA2848B728DDB2EF00C63962 /* UIViewController+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2848B628DDB2EF00C63962 /* UIViewController+Context.swift */; };
 		FA72478028D8EC6000B9DEB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72477F28D8EC6000B9DEB1 /* AppDelegate.swift */; };
 		FA72478228D8EC6000B9DEB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72478128D8EC6000B9DEB1 /* SceneDelegate.swift */; };
-		FA72478428D8EC6000B9DEB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72478328D8EC6000B9DEB1 /* ViewController.swift */; };
 		FA72478728D8EC6000B9DEB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA72478528D8EC6000B9DEB1 /* Main.storyboard */; };
 		FA72478A28D8EC6000B9DEB1 /* ComprasUSA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA72478828D8EC6000B9DEB1 /* ComprasUSA.xcdatamodeld */; };
 		FA72478C28D8EC6300B9DEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA72478B28D8EC6300B9DEB1 /* Assets.xcassets */; };
@@ -17,6 +29,8 @@
 		FA72479A28D8EC6300B9DEB1 /* ComprasUSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72479928D8EC6300B9DEB1 /* ComprasUSATests.swift */; };
 		FA7247A428D8EC6400B9DEB1 /* ComprasUSAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7247A328D8EC6400B9DEB1 /* ComprasUSAUITests.swift */; };
 		FA7247A628D8EC6400B9DEB1 /* ComprasUSAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7247A528D8EC6400B9DEB1 /* ComprasUSAUITestsLaunchTests.swift */; };
+		FA7247BC28DB04B500B9DEB1 /* Purchases.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7247BB28DB04B500B9DEB1 /* Purchases.storyboard */; };
+		FA7247C428DD9FC600B9DEB1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7247C328DD9FC600B9DEB1 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +51,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA131FFB28DED05E00FD8F85 /* MonetaryPoliceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetaryPoliceManager.swift; sourceTree = "<group>"; };
+		FA131FFE28DED27100FD8F85 /* MonetaryPolice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetaryPolice.swift; sourceTree = "<group>"; };
+		FA13200528DF9CAF00FD8F85 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		FA13200728DFAC0800FD8F85 /* Product+Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+Conversions.swift"; sourceTree = "<group>"; };
+		FA13200A28DFEC8F00FD8F85 /* PurchasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesViewController.swift; sourceTree = "<group>"; };
+		FA13200C28DFF06200FD8F85 /* TableProductsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableProductsViewCell.swift; sourceTree = "<group>"; };
+		FA13201228E056DF00FD8F85 /* InvoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceViewController.swift; sourceTree = "<group>"; };
+		FA13201428E0B43A00FD8F85 /* InvoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceViewModel.swift; sourceTree = "<group>"; };
+		FA13201628E0CAD400FD8F85 /* Invoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Invoice.storyboard; sourceTree = "<group>"; };
+		FA13201828E0CCEE00FD8F85 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		FA13201A28E0CE3600FD8F85 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
+		FA13201C28E0FD3600FD8F85 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		FA2848B628DDB2EF00C63962 /* UIViewController+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Context.swift"; sourceTree = "<group>"; };
 		FA72477C28D8EC6000B9DEB1 /* ComprasUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComprasUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA72477F28D8EC6000B9DEB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA72478128D8EC6000B9DEB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA72478328D8EC6000B9DEB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA72478628D8EC6000B9DEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA72478928D8EC6000B9DEB1 /* ComprasUSA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComprasUSA.xcdatamodel; sourceTree = "<group>"; };
 		FA72478B28D8EC6300B9DEB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +77,8 @@
 		FA72479F28D8EC6400B9DEB1 /* ComprasUSAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComprasUSAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7247A328D8EC6400B9DEB1 /* ComprasUSAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprasUSAUITests.swift; sourceTree = "<group>"; };
 		FA7247A528D8EC6400B9DEB1 /* ComprasUSAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprasUSAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA7247BB28DB04B500B9DEB1 /* Purchases.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Purchases.storyboard; sourceTree = "<group>"; };
+		FA7247C328DD9FC600B9DEB1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +106,115 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA131FF928DECF3800FD8F85 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FA131FFA28DED03F00FD8F85 /* MonetaryPolice */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FA131FFA28DED03F00FD8F85 /* MonetaryPolice */ = {
+			isa = PBXGroup;
+			children = (
+				FA131FFD28DED0AE00FD8F85 /* Model */,
+				FA13200028DED36700FD8F85 /* Manager */,
+			);
+			path = MonetaryPolice;
+			sourceTree = "<group>";
+		};
+		FA131FFD28DED0AE00FD8F85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA131FFE28DED27100FD8F85 /* MonetaryPolice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA13200028DED36700FD8F85 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FA131FFB28DED05E00FD8F85 /* MonetaryPoliceManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		FA13200128DF9C6F00FD8F85 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				FA13200328DF9C8600FD8F85 /* Controller */,
+				FA13200428DF9C8D00FD8F85 /* View */,
+				FA13200228DF9C7E00FD8F85 /* ViewModel */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		FA13200228DF9C7E00FD8F85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA13200328DF9C8600FD8F85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA13200528DF9CAF00FD8F85 /* ProductViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA13200428DF9C8D00FD8F85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA13201A28E0CE3600FD8F85 /* Product.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA13200E28E0562C00FD8F85 /* Invoice */ = {
+			isa = PBXGroup;
+			children = (
+				FA13200F28E0564000FD8F85 /* Controller */,
+				FA13201028E0564B00FD8F85 /* View */,
+				FA13201128E0565400FD8F85 /* ViewModel */,
+			);
+			path = Invoice;
+			sourceTree = "<group>";
+		};
+		FA13200F28E0564000FD8F85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA13201228E056DF00FD8F85 /* InvoiceViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA13201028E0564B00FD8F85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA13201628E0CAD400FD8F85 /* Invoice.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA13201128E0565400FD8F85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA13201428E0B43A00FD8F85 /* InvoiceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA2848B528DDB2B800C63962 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA13200728DFAC0800FD8F85 /* Product+Conversions.swift */,
+				FA2848B628DDB2EF00C63962 /* UIViewController+Context.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FA72477328D8EC6000B9DEB1 = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +238,18 @@
 		FA72477E28D8EC6000B9DEB1 /* ComprasUSA */ = {
 			isa = PBXGroup;
 			children = (
-				FA72477F28D8EC6000B9DEB1 /* AppDelegate.swift */,
-				FA72478128D8EC6000B9DEB1 /* SceneDelegate.swift */,
-				FA72478328D8EC6000B9DEB1 /* ViewController.swift */,
+				FA13200E28E0562C00FD8F85 /* Invoice */,
+				FA13200128DF9C6F00FD8F85 /* Product */,
+				FA7247BF28DD9F9700B9DEB1 /* Settings */,
+				FA7247B628DB040200B9DEB1 /* Purchases */,
+				FA7247B228DB035700B9DEB1 /* Main */,
+				FA7247BD28DD9A6900B9DEB1 /* Databases */,
+				FA2848B528DDB2B800C63962 /* Extensions */,
+				FA131FF928DECF3800FD8F85 /* Shared */,
 				FA72478528D8EC6000B9DEB1 /* Main.storyboard */,
 				FA72478B28D8EC6300B9DEB1 /* Assets.xcassets */,
-				FA72478D28D8EC6300B9DEB1 /* LaunchScreen.storyboard */,
 				FA72479028D8EC6300B9DEB1 /* Info.plist */,
-				FA72478828D8EC6000B9DEB1 /* ComprasUSA.xcdatamodeld */,
+				FA13201C28E0FD3600FD8F85 /* Settings.bundle */,
 			);
 			path = ComprasUSA;
 			sourceTree = "<group>";
@@ -128,6 +269,99 @@
 				FA7247A528D8EC6400B9DEB1 /* ComprasUSAUITestsLaunchTests.swift */,
 			);
 			path = ComprasUSAUITests;
+			sourceTree = "<group>";
+		};
+		FA7247B228DB035700B9DEB1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FA7247BE28DD9B6D00B9DEB1 /* View */,
+				FA72477F28D8EC6000B9DEB1 /* AppDelegate.swift */,
+				FA72478128D8EC6000B9DEB1 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FA7247B628DB040200B9DEB1 /* Purchases */ = {
+			isa = PBXGroup;
+			children = (
+				FA7247BA28DB048000B9DEB1 /* Controller */,
+				FA7247B928DB047900B9DEB1 /* View */,
+				FA7247B828DB047100B9DEB1 /* ViewModel */,
+			);
+			path = Purchases;
+			sourceTree = "<group>";
+		};
+		FA7247B828DB047100B9DEB1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA13200C28DFF06200FD8F85 /* TableProductsViewCell.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA7247B928DB047900B9DEB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA7247BB28DB04B500B9DEB1 /* Purchases.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA7247BA28DB048000B9DEB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA13200A28DFEC8F00FD8F85 /* PurchasesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA7247BD28DD9A6900B9DEB1 /* Databases */ = {
+			isa = PBXGroup;
+			children = (
+				FA72478828D8EC6000B9DEB1 /* ComprasUSA.xcdatamodeld */,
+			);
+			path = Databases;
+			sourceTree = "<group>";
+		};
+		FA7247BE28DD9B6D00B9DEB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA72478D28D8EC6300B9DEB1 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA7247BF28DD9F9700B9DEB1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FA7247C128DD9FA400B9DEB1 /* Controller */,
+				FA7247C028DD9FA000B9DEB1 /* View */,
+				FA7247C228DD9FAE00B9DEB1 /* ViewModel */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FA7247C028DD9FA000B9DEB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA13201828E0CCEE00FD8F85 /* Settings.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA7247C128DD9FA400B9DEB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA7247C328DD9FC600B9DEB1 /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA7247C228DD9FAE00B9DEB1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +468,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA13201D28E0FD3600FD8F85 /* Settings.bundle in Resources */,
 				FA72478F28D8EC6300B9DEB1 /* LaunchScreen.storyboard in Resources */,
+				FA7247BC28DB04B500B9DEB1 /* Purchases.storyboard in Resources */,
+				FA13201B28E0CE3600FD8F85 /* Product.storyboard in Resources */,
 				FA72478C28D8EC6300B9DEB1 /* Assets.xcassets in Resources */,
+				FA13201928E0CCEE00FD8F85 /* Settings.storyboard in Resources */,
+				FA13201728E0CAD400FD8F85 /* Invoice.storyboard in Resources */,
 				FA72478728D8EC6000B9DEB1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +500,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA72478428D8EC6000B9DEB1 /* ViewController.swift in Sources */,
+				FA131FFC28DED05E00FD8F85 /* MonetaryPoliceManager.swift in Sources */,
+				FA7247C428DD9FC600B9DEB1 /* SettingsViewController.swift in Sources */,
+				FA13201328E056DF00FD8F85 /* InvoiceViewController.swift in Sources */,
 				FA72478A28D8EC6000B9DEB1 /* ComprasUSA.xcdatamodeld in Sources */,
+				FA131FFF28DED27100FD8F85 /* MonetaryPolice.swift in Sources */,
 				FA72478028D8EC6000B9DEB1 /* AppDelegate.swift in Sources */,
+				FA13201528E0B43A00FD8F85 /* InvoiceViewModel.swift in Sources */,
 				FA72478228D8EC6000B9DEB1 /* SceneDelegate.swift in Sources */,
+				FA13200D28DFF06200FD8F85 /* TableProductsViewCell.swift in Sources */,
+				FA13200628DF9CAF00FD8F85 /* ProductViewController.swift in Sources */,
+				FA13200B28DFEC8F00FD8F85 /* PurchasesViewController.swift in Sources */,
+				FA2848B728DDB2EF00C63962 /* UIViewController+Context.swift in Sources */,
+				FA13200828DFAC0800FD8F85 /* Product+Conversions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,8 +694,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +707,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,8 +723,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,7 +736,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
